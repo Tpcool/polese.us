@@ -1,25 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import MyNavbar from './components/Navbar/NavigationBar.js';
+import PageGrid from './components/PageTile/PageTile.js';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <MyNavbar />
+            <PageGrid />
+        </>
+    )
 }
 
 export default App;
+
+/*
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Website Test</title>
+    </head>
+    <body>
+
+        <script
+            src="Q:\\Desktop\\Programming\\Webdev\\polese.us\\src\\js\\bootstrap.bundle.min.js"
+            ></script>
+    </body>
+</html>
+*/
+
+/*<div className="app">
+    <header className="App-header">
+        <button type="button" className="btn btn-primary">Primary</button>
+    </header>
+</div>*/
