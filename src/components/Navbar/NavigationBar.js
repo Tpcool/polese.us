@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { Nav, Navbar } from 'bootstrap/dist/css/bootstrap.css';
-import { MenuItems } from './MenuItems.js';
 import './NavigationBar.css';
 import NavLogo from './logo.gif';
 
-class MyNavbar extends Component {
+class SiteNavbar extends Component {
     state = { clicked: false }
 
     handleClick = () => {
@@ -15,7 +14,7 @@ class MyNavbar extends Component {
         return (
             <nav className="NavbarItems navbar navbar-expand-lg bg-dark navbar-dark">
                 <div class="container">
-                    <img src={NavLogo} alt="logo" className='logo'/>
+                    <img src={NavLogo} alt="logo" className="logo"/>
                     <a href="polese.us" class="navbar-brand">polese.us</a>
                     <button
                         class="navbar-toggler"
@@ -27,15 +26,15 @@ class MyNavbar extends Component {
                     </button>
                     <div class="collapse navbar-collapse" id="navmenu">
                         <ul class="navbar-nav">
-                            {MenuItems.map((item, index) => {
-                                return (
-                                    <li key={index} className={item.classItemName}>
-                                        <a className={item.classLinkName} href={item.url}>
-                                            {item.title}
-                                        </a>
-                                    </li>
-                                )
-                            })}
+                        {this.props.displayItems.map((item, index) => {
+                            return (
+                                <li key={index} className={item.classItemName}>
+                                    <a className={item.classLinkName} href={item.url}>
+                                        {item.title}
+                                    </a>
+                                </li>
+                            )
+                        })}
                         </ul>
                     </div>
                 </div>
@@ -44,4 +43,4 @@ class MyNavbar extends Component {
     }
 }
 
-export default MyNavbar
+export default SiteNavbar;

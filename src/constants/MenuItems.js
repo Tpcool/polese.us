@@ -1,7 +1,7 @@
-import About from './about.png';
-import Projects from './projects.png';
-import Blog from './blog.png';
-import Contact from './contact.png';
+import About from '../images/mi_about.png';
+import Projects from '../images/mi_projects.png';
+import Blog from '../images/mi_blog.png';
+import Contact from '../images/mi_contact.png';
 
 const ClassLinkName = 'nav-link';
 const ClassItemName = 'nav-item';
@@ -13,7 +13,7 @@ export const MenuItems = [
         classLinkName: ClassLinkName,
         classItemName: ClassItemName,
         image: About,
-        description: 'Background information',
+        description: 'All kinds of personal information',
     },
     {
         title: 'Projects',
