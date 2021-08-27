@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Logo from './logo.gif';
 import './PageTile.css';
 
@@ -8,13 +9,13 @@ class PageTile extends Component {
         return (
             <>
                 <div class="tile_wrapper col-lg">
-                    <a class="tile_link" href={this.props.url}>
+                    <Link to={this.props.path}>
                         <img class="tile_image" src={this.props.image} alt={altText} />
                         <div class="tile_overlay tile_overlay--blur p-3">
                             <div class="tile_overlay_title_lg tile_overlay_title">{this.props.title}</div>
                             <p class="tile_overlay_description_lg tile_overlay_description">{this.props.description}</p>
                         </div>
-                    </a>
+                    </Link>
                 </div>
             </>
         );
@@ -25,7 +26,7 @@ class PageGrid extends Component {
     renderPageGrid() {
         return (
             this.props.displayItems.map((item) => (
-                <PageTile title={item.title} description={item.description} url={item.url} image={item.image}  />
+                <PageTile title={item.title} description={item.description} path={item.path} image={item.image}  />
             ))
         );
     }
@@ -44,3 +45,24 @@ class PageGrid extends Component {
 }
 
 export default PageGrid;
+
+/*
+renderPageGrid() {
+    return (
+        this.props.displayItems.map((item) => (
+            <PageTile title={item.title} description={item.description} url={item.url} image={item.image}  />
+        ))
+    );
+}
+*/
+
+/*renderPageGrid() {this.props.displayItems.map((item, index) => {
+    if (item.title !== 'Home') {
+        return (
+
+                <li key={index} className={item.classItemName}>
+                        {item.title}
+                </li>
+        )
+    }
+})}*/

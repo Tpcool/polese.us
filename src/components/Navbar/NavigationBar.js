@@ -1,21 +1,17 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import { Nav, Navbar } from 'bootstrap/dist/css/bootstrap.css';
 import './NavigationBar.css';
-import NavLogo from './logo.gif';
 
 class SiteNavbar extends Component {
-    state = { clicked: false }
-
-    handleClick = () => {
-        this.setState({ clicked: !this.state.clicked })
-    }
-
     render() {
         return (
             <nav className="NavbarItems navbar navbar-expand-lg bg-dark navbar-dark">
                 <div class="container">
-                    <img src={NavLogo} alt="logo" className="logo"/>
-                    <a href="polese.us" class="navbar-brand">polese.us</a>
+                    <Link class="navbar-brand" to="/">
+                        <img src={this.props.displayItems[0].image} alt="logo" className="logo"/>
+                        polese.us
+                    </Link>
                     <button
                         class="navbar-toggler"
                         type="button"
@@ -27,13 +23,16 @@ class SiteNavbar extends Component {
                     <div class="collapse navbar-collapse" id="navmenu">
                         <ul class="navbar-nav">
                         {this.props.displayItems.map((item, index) => {
-                            return (
-                                <li key={index} className={item.classItemName}>
-                                    <a className={item.classLinkName} href={item.url}>
-                                        {item.title}
-                                    </a>
-                                </li>
-                            )
+                            if (item.title !== 'Home') {
+                                return (
+
+                                        <li key={index} className={item.classItemName}>
+                                            <Link class={item.classLinkName} to={item.path}>
+                                                {item.title}
+                                            </Link>
+                                        </li>
+                                )
+                            }
                         })}
                         </ul>
                     </div>
@@ -44,3 +43,11 @@ class SiteNavbar extends Component {
 }
 
 export default SiteNavbar;
+
+/*
+<a className={item.classLinkName} href={item.url}>
+    {item.title}
+</a>
+
+<a href="polese.us" class="navbar-brand">polese.us</a>
+*/
