@@ -43,11 +43,3 @@ class SiteNavbar extends Component {
 }
 
 export default SiteNavbar;
-
-/*
-<a className={item.classLinkName} href={item.url}>
-    {item.title}
-</a>
-
-<a href="polese.us" class="navbar-brand">polese.us</a>
-*/

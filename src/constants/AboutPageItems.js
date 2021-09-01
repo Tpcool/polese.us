@@ -8,7 +8,8 @@ import WorkImage from '../images/api_work.jpg';
 export const AboutPageItems = [
     {
         header: 'A brief summary',
-        image: 'N/A',
+        image: DizzyImage,
+        imageAltText: '',
         body: `
             Dolore aliquip si praesentibus. Duis iudicem ab eram noster qui in fore dolore
             quorum cernantur a de magna ullamco incurreret a an quo culpa quibusdam. Duis et
@@ -24,7 +25,8 @@ export const AboutPageItems = [
     },
     {
         header: 'What I like',
-        image: 'N/A',
+        image: FormalImage,
+        imageAltText: '',
         body: `
             Dolore aliquip si praesentibus. Duis iudicem ab eram noster qui in fore dolore
             quorum cernantur a de magna ullamco incurreret a an quo culpa quibusdam. Duis et
@@ -40,7 +42,8 @@ export const AboutPageItems = [
     },
     {
         header: 'My story',
-        image: 'N/A',
+        image: SoylentImage,
+        imageAltText: '',
         body: `
             Dolore aliquip si praesentibus. Duis iudicem ab eram noster qui in fore dolore
             quorum cernantur a de magna ullamco incurreret a an quo culpa quibusdam. Duis et
@@ -54,9 +57,10 @@ export const AboutPageItems = [
             senserit, ita dolor eiusmod relinqueret. Iudicem hic voluptate.
         `,
     },
-    {
+    /*{
         header: 'My faith',
         image: 'N/A',
+        imageAltText: '',
         body: `
             Growing up, I was raised Catholic. From my recollection, I would attend
             church services most often around important religious holidays, like
@@ -115,5 +119,5 @@ export const AboutPageItems = [
             believe we can form much greater, more genuine connections that way,
             and that is a vital aspect towards progress and loving one another.
         `,
-    },
+    },*/
 ];
