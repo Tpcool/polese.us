@@ -7,15 +7,24 @@ import './About.css';
 
 class AboutSection extends Component {
     render() {
+        const startImage = "float-start me-4";
+        const endImage = "float-end ms-4";
+        var imageClass = "img-fluid fit-image my-4 rounded " + (IsOdd(this.props.index) ? startImage : endImage);
+
         return (
             <>
                 <section class="p-4">
                     <div class="container">
-                        <h2>{this.props.header}</h2>
                         <div class="row">
-                            <div class="col-md-12">
-                                <img class={IsOdd(this.props.index) ? "fit-image img-fluid m-4 rounded float-start" : "fit-image img-fluid m-4 rounded float-end"} src={this.props.image} alt={this.props.imageAltText} />
-                                <p class="lead my-3">{this.props.body} aaaand {this.props.index}</p>
+                            <div class="col-xs-12">
+                                <img class={imageClass} src={this.props.image} alt={this.props.imageAltText} />
+                                <h2>{this.props.header}</h2>
+                                <p class="lead my-3">{this.props.body}</p>
+                                {this.props.subsection.map((item) => {
+                                    return (
+                                        <AboutSubsection subheader={item.subheader} subbody={item.subbody} />
+                                    );
+                                })}
                             </div>
                         </div>
                     </div>
@@ -25,12 +34,12 @@ class AboutSection extends Component {
     }
 }
 
-// Main section, then nested subsection. Main section contains section tag and row separator and image, subsection contains subheaders and content
-class AboutSubSection extends Component {
+class AboutSubsection extends Component {
     render() {
         return (
             <>
-                <h1>placeholder</h1>
+                <h3>{this.props.subheader}</h3>
+                <p class="lead my-3">{this.props.subbody}</p>
             </>
         );
     }
@@ -45,12 +54,15 @@ function About() {
     return (
         <>
             <div class="container pt-4">
-                <h1>Lorem Ipsum</h1>
+                <h1>About me</h1>
             </div>
             {AboutPageItems.map((item, index) => {
                 return (
-                    <AboutSection header={item.header} image={item.image} imageAltText={item.imageAltText} body={item.body} index={index}/>
-                )
+                    <AboutSection
+                        index={index} header={item.header}
+                        image={item.image} imageAltText={item.imageAltText}
+                        body={item.body} subsection={item.subsection} />
+                );
             })}
         </>
     )
