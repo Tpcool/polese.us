@@ -1,13 +1,13 @@
 // Image import
-import DizzyImage from '../images/api_dizzy.jpg';
-import FormalImage from '../images/api_formal.jpg';
-import SleepyImage from '../images/api_sleepy.jpg';
-import SoylentImage from '../images/api_soylent.jpg';
-import WorkImage from '../images/api_work.jpg';
+import DizzyImage from '../images/api_dizzy.png';
+import FormalImage from '../images/api_formal.png';
+import SleepyImage from '../images/api_sleepy.png';
+import SoylentImage from '../images/api_soylent.png';
+import WorkImage from '../images/api_work.png';
 
 export const AboutPageItems = [
     {
-        header: 'A brief summary',
+        header: 'Lorem Ipsum',
         image: FormalImage,
         imageAltText: '',
         body: `
@@ -16,15 +16,11 @@ export const AboutPageItems = [
             vidisse a dolore, multos deserunt ita vidisse, cernantur esse a quamquam
             instituendarum, sed aut summis consequat do incididunt sunt cernantur litteris,
             doctrina a dolor te ubi quae domesticarum a litteris philosophari qui senserit.
-            Labore proident o appellat ubi labore nostrud ex fidelissimae.Multos nostrud ut
-            veniam nisi se offendit iis quorum. O enim senserit. Cillum offendit commodo, o
-            quae aliqua duis admodum non noster possumus de praetermissum, proident ex quem
-            commodo, commodo non anim qui officia multos constias quibusdam o quamquam nam
-            senserit, ita dolor eiusmod relinqueret. Iudicem hic voluptate.
+            Labore proident o appellat ubi labore nostrud ex fidelissimae.
         `,
         subsection: [
             {
-                subheader: 'Hobbies',
+                subheader: 'Lorem',
                 subbody: `
                     Sunt expetendis do voluptatibus, export ubi te quid offendit. In eram irure
                     fugiat quibusdam qui voluptate iis labore o laborum quae litteris aliquip, de
@@ -34,56 +30,13 @@ export const AboutPageItems = [
                     illum incididunt enim. Cernantur fidelissimae ex proident, ubi nisi fabulas
                     comprehenderit sed cillum in eiusmod quo cillum appellat illustriora ea ea in
                     veniam cupidatat, constias summis cernantur occaecat, duis de offendit de elit
-                    probant si efflorescere.Deserunt aut minim, ubi ut tractavissent sed quid
-                    mentitum in imitarentur, legam ab iudicem, admodum aute fabulas eiusmod ab elit
-                    de iudicem in dolore eu e magna aliquip offendit e iis malis incurreret
-                    voluptatibus. Ab culpa fidelissimae, arbitror export possumus appellat, ullamco
-                    legam culpa an summis ita officia in noster. Summis et eiusmod do tempor,
-                    officia id doctrina. Litteris aliqua legam de quis.
-                `,
-            },
-            {
-                subheader: 'Likes',
-                subbody: `
-                    Sunt expetendis do voluptatibus, export ubi te quid offendit. In eram irure
-                    fugiat quibusdam qui voluptate iis labore o laborum quae litteris aliquip, de
-                    culpa ex nisi ut legam iis cupidatat iis sed quid fore culpa ullamco, amet
-                    constias a laborum, litteris ipsum id nostrud arbitrantur. Ea eu enim vidisse
-                    ubi esse probant non senserit, malis eu singulis quo legam, pariatur quorum
-                    illum incididunt enim. Cernantur fidelissimae ex proident, ubi nisi fabulas
-                    comprehenderit sed cillum in eiusmod quo cillum appellat illustriora ea ea in
-                    veniam cupidatat, constias summis cernantur occaecat, duis de offendit de elit
-                    probant si efflorescere.Deserunt aut minim, ubi ut tractavissent sed quid
-                    mentitum in imitarentur, legam ab iudicem, admodum aute fabulas eiusmod ab elit
-                    de iudicem in dolore eu e magna aliquip offendit e iis malis incurreret
-                    voluptatibus. Ab culpa fidelissimae, arbitror export possumus appellat, ullamco
-                    legam culpa an summis ita officia in noster. Summis et eiusmod do tempor,
-                    officia id doctrina. Litteris aliqua legam de quis.
-                `,
-            },
-            {
-                subheader: 'Dislikes',
-                subbody: `
-                    Sunt expetendis do voluptatibus, export ubi te quid offendit. In eram irure
-                    fugiat quibusdam qui voluptate iis labore o laborum quae litteris aliquip, de
-                    culpa ex nisi ut legam iis cupidatat iis sed quid fore culpa ullamco, amet
-                    constias a laborum, litteris ipsum id nostrud arbitrantur. Ea eu enim vidisse
-                    ubi esse probant non senserit, malis eu singulis quo legam, pariatur quorum
-                    illum incididunt enim. Cernantur fidelissimae ex proident, ubi nisi fabulas
-                    comprehenderit sed cillum in eiusmod quo cillum appellat illustriora ea ea in
-                    veniam cupidatat, constias summis cernantur occaecat, duis de offendit de elit
-                    probant si efflorescere.Deserunt aut minim, ubi ut tractavissent sed quid
-                    mentitum in imitarentur, legam ab iudicem, admodum aute fabulas eiusmod ab elit
-                    de iudicem in dolore eu e magna aliquip offendit e iis malis incurreret
-                    voluptatibus. Ab culpa fidelissimae, arbitror export possumus appellat, ullamco
-                    legam culpa an summis ita officia in noster. Summis et eiusmod do tempor,
-                    officia id doctrina. Litteris aliqua legam de quis.
+                    probant si efflorescere.
                 `,
             },
         ]
     },
     {
-        header: 'My online presense',
+        header: 'Lorem Ipsum',
         image: WorkImage,
         imageAltText: '',
         body: `
@@ -92,93 +45,24 @@ export const AboutPageItems = [
             vidisse a dolore, multos deserunt ita vidisse, cernantur esse a quamquam
             instituendarum, sed aut summis consequat do incididunt sunt cernantur litteris,
             doctrina a dolor te ubi quae domesticarum a litteris philosophari qui senserit.
-            Labore proident o appellat ubi labore nostrud ex fidelissimae.Multos nostrud ut
-            veniam nisi se offendit iis quorum. O enim senserit. Cillum offendit commodo, o
-            quae aliqua duis admodum non noster possumus de praetermissum, proident ex quem
-            commodo, commodo non anim qui officia multos constias quibusdam o quamquam nam
-            senserit, ita dolor eiusmod relinqueret. Iudicem hic voluptate.
+            Labore proident o appellat ubi labore nostrud ex fidelissimae.
         `,
         subsection: [
             {
-                subheader: 'videogamesblogger',
+                subheader: 'Lorem',
                 subbody: `
                     Sunt expetendis do voluptatibus, export ubi te quid offendit. In eram irure
                     fugiat quibusdam qui voluptate iis labore o laborum quae litteris aliquip, de
                     culpa ex nisi ut legam iis cupidatat iis sed quid fore culpa ullamco, amet
                     constias a laborum, litteris ipsum id nostrud arbitrantur. Ea eu enim vidisse
                     ubi esse probant non senserit, malis eu singulis quo legam, pariatur quorum
-                    illum incididunt enim. Cernantur fidelissimae ex proident, ubi nisi fabulas
-                    comprehenderit sed cillum in eiusmod quo cillum appellat illustriora ea ea in
-                    veniam cupidatat, constias summis cernantur occaecat, duis de offendit de elit
-                    probant si efflorescere.Deserunt aut minim, ubi ut tractavissent sed quid
-                    mentitum in imitarentur, legam ab iudicem, admodum aute fabulas eiusmod ab elit
-                    de iudicem in dolore eu e magna aliquip offendit e iis malis incurreret
-                    voluptatibus. Ab culpa fidelissimae, arbitror export possumus appellat, ullamco
-                    legam culpa an summis ita officia in noster. Summis et eiusmod do tempor,
-                    officia id doctrina. Litteris aliqua legam de quis.
-                `,
-            },
-            {
-                subheader: 'YouTube',
-                subbody: `
-                    Sunt expetendis do voluptatibus, export ubi te quid offendit. In eram irure
-                    fugiat quibusdam qui voluptate iis labore o laborum quae litteris aliquip, de
-                    culpa ex nisi ut legam iis cupidatat iis sed quid fore culpa ullamco, amet
-                    constias a laborum, litteris ipsum id nostrud arbitrantur. Ea eu enim vidisse
-                    ubi esse probant non senserit, malis eu singulis quo legam, pariatur quorum
-                    illum incididunt enim. Cernantur fidelissimae ex proident, ubi nisi fabulas
-                    comprehenderit sed cillum in eiusmod quo cillum appellat illustriora ea ea in
-                    veniam cupidatat, constias summis cernantur occaecat, duis de offendit de elit
-                    probant si efflorescere.Deserunt aut minim, ubi ut tractavissent sed quid
-                    mentitum in imitarentur, legam ab iudicem, admodum aute fabulas eiusmod ab elit
-                    de iudicem in dolore eu e magna aliquip offendit e iis malis incurreret
-                    voluptatibus. Ab culpa fidelissimae, arbitror export possumus appellat, ullamco
-                    legam culpa an summis ita officia in noster. Summis et eiusmod do tempor,
-                    officia id doctrina. Litteris aliqua legam de quis.
-                `,
-            },
-            {
-                subheader: 'Cave Story Tribute Site Forums',
-                subbody: `
-                    Sunt expetendis do voluptatibus, export ubi te quid offendit. In eram irure
-                    fugiat quibusdam qui voluptate iis labore o laborum quae litteris aliquip, de
-                    culpa ex nisi ut legam iis cupidatat iis sed quid fore culpa ullamco, amet
-                    constias a laborum, litteris ipsum id nostrud arbitrantur. Ea eu enim vidisse
-                    ubi esse probant non senserit, malis eu singulis quo legam, pariatur quorum
-                    illum incididunt enim. Cernantur fidelissimae ex proident, ubi nisi fabulas
-                    comprehenderit sed cillum in eiusmod quo cillum appellat illustriora ea ea in
-                    veniam cupidatat, constias summis cernantur occaecat, duis de offendit de elit
-                    probant si efflorescere.Deserunt aut minim, ubi ut tractavissent sed quid
-                    mentitum in imitarentur, legam ab iudicem, admodum aute fabulas eiusmod ab elit
-                    de iudicem in dolore eu e magna aliquip offendit e iis malis incurreret
-                    voluptatibus. Ab culpa fidelissimae, arbitror export possumus appellat, ullamco
-                    legam culpa an summis ita officia in noster. Summis et eiusmod do tempor,
-                    officia id doctrina. Litteris aliqua legam de quis.
-                `,
-            },
-            {
-                subheader: 'Discord',
-                subbody: `
-                    Sunt expetendis do voluptatibus, export ubi te quid offendit. In eram irure
-                    fugiat quibusdam qui voluptate iis labore o laborum quae litteris aliquip, de
-                    culpa ex nisi ut legam iis cupidatat iis sed quid fore culpa ullamco, amet
-                    constias a laborum, litteris ipsum id nostrud arbitrantur. Ea eu enim vidisse
-                    ubi esse probant non senserit, malis eu singulis quo legam, pariatur quorum
-                    illum incididunt enim. Cernantur fidelissimae ex proident, ubi nisi fabulas
-                    comprehenderit sed cillum in eiusmod quo cillum appellat illustriora ea ea in
-                    veniam cupidatat, constias summis cernantur occaecat, duis de offendit de elit
-                    probant si efflorescere.Deserunt aut minim, ubi ut tractavissent sed quid
-                    mentitum in imitarentur, legam ab iudicem, admodum aute fabulas eiusmod ab elit
-                    de iudicem in dolore eu e magna aliquip offendit e iis malis incurreret
-                    voluptatibus. Ab culpa fidelissimae, arbitror export possumus appellat, ullamco
-                    legam culpa an summis ita officia in noster. Summis et eiusmod do tempor,
-                    officia id doctrina. Litteris aliqua legam de quis.
+                    illum incididunt enim.
                 `,
             },
         ]
     },
     {
-        header: 'Delicious Soylent',
+        header: 'Lorem Ipsum',
         image: SoylentImage,
         imageAltText: '',
         body: `
@@ -187,49 +71,17 @@ export const AboutPageItems = [
             vidisse a dolore, multos deserunt ita vidisse, cernantur esse a quamquam
             instituendarum, sed aut summis consequat do incididunt sunt cernantur litteris,
             doctrina a dolor te ubi quae domesticarum a litteris philosophari qui senserit.
-            Labore proident o appellat ubi labore nostrud ex fidelissimae.Multos nostrud ut
-            veniam nisi se offendit iis quorum. O enim senserit. Cillum offendit commodo, o
-            quae aliqua duis admodum non noster possumus de praetermissum, proident ex quem
-            commodo, commodo non anim qui officia multos constias quibusdam o quamquam nam
-            senserit, ita dolor eiusmod relinqueret. Iudicem hic voluptate.
         `,
         subsection: [
             {
-                subheader: 'Initial Fascination',
+                subheader: 'Lorem',
                 subbody: `
                     Sunt expetendis do voluptatibus, export ubi te quid offendit. In eram irure
                     fugiat quibusdam qui voluptate iis labore o laborum quae litteris aliquip, de
                     culpa ex nisi ut legam iis cupidatat iis sed quid fore culpa ullamco, amet
                     constias a laborum, litteris ipsum id nostrud arbitrantur. Ea eu enim vidisse
                     ubi esse probant non senserit, malis eu singulis quo legam, pariatur quorum
-                    illum incididunt enim. Cernantur fidelissimae ex proident, ubi nisi fabulas
-                    comprehenderit sed cillum in eiusmod quo cillum appellat illustriora ea ea in
-                    veniam cupidatat, constias summis cernantur occaecat, duis de offendit de elit
-                    probant si efflorescere.Deserunt aut minim, ubi ut tractavissent sed quid
-                    mentitum in imitarentur, legam ab iudicem, admodum aute fabulas eiusmod ab elit
-                    de iudicem in dolore eu e magna aliquip offendit e iis malis incurreret
-                    voluptatibus. Ab culpa fidelissimae, arbitror export possumus appellat, ullamco
-                    legam culpa an summis ita officia in noster. Summis et eiusmod do tempor,
-                    officia id doctrina. Litteris aliqua legam de quis.
-                `,
-            },
-            {
-                subheader: 'Sweepstakes',
-                subbody: `
-                    Sunt expetendis do voluptatibus, export ubi te quid offendit. In eram irure
-                    fugiat quibusdam qui voluptate iis labore o laborum quae litteris aliquip, de
-                    culpa ex nisi ut legam iis cupidatat iis sed quid fore culpa ullamco, amet
-                    constias a laborum, litteris ipsum id nostrud arbitrantur. Ea eu enim vidisse
-                    ubi esse probant non senserit, malis eu singulis quo legam, pariatur quorum
-                    illum incididunt enim. Cernantur fidelissimae ex proident, ubi nisi fabulas
-                    comprehenderit sed cillum in eiusmod quo cillum appellat illustriora ea ea in
-                    veniam cupidatat, constias summis cernantur occaecat, duis de offendit de elit
-                    probant si efflorescere.Deserunt aut minim, ubi ut tractavissent sed quid
-                    mentitum in imitarentur, legam ab iudicem, admodum aute fabulas eiusmod ab elit
-                    de iudicem in dolore eu e magna aliquip offendit e iis malis incurreret
-                    voluptatibus. Ab culpa fidelissimae, arbitror export possumus appellat, ullamco
-                    legam culpa an summis ita officia in noster. Summis et eiusmod do tempor,
-                    officia id doctrina. Litteris aliqua legam de quis.
+                    illum incididunt enim.
                 `,
             },
         ]

@@ -1,23 +1,24 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Test from './test.png';
 import { AboutPageItems } from './constants/AboutPageItems.js';
 import 'bootstrap/dist/css/bootstrap.css';
 import './About.css';
 
 class AboutSection extends Component {
     render() {
-        const startImage = "float-start me-4";
-        const endImage = "float-end ms-4";
-        var imageClass = "img-fluid fit-image my-4 rounded " + (IsOdd(this.props.index) ? startImage : endImage);
+        const startImage = "float-md-start me-md-4";
+        const endImage = "float-md-end ms-md-4";
+        var imageClass = "img-fluid my-4 rounded custom-fit-image " + (IsOdd(this.props.index) ? startImage : endImage);
 
         return (
             <>
                 <section class="p-4">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <img class={imageClass} src={this.props.image} alt={this.props.imageAltText} />
+                        <div class="d-md-flex">
+                            <div>
+                                <div class="text-center">
+                                    <img class={imageClass} src={this.props.image} alt={this.props.imageAltText} />
+                                </div>
                                 <h2>{this.props.header}</h2>
                                 <p class="lead my-3">{this.props.body}</p>
                                 {this.props.subsection.map((item) => {
@@ -56,6 +57,7 @@ function About() {
             <div class="container pt-4">
                 <h1>About me</h1>
             </div>
+
             {AboutPageItems.map((item, index) => {
                 return (
                     <AboutSection
